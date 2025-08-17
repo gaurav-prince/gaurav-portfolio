@@ -34,3 +34,48 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Folder Structure
+gaurav-portfolio/
+│
+├── public/
+│   ├── images/            # All portfolio images
+│   ├── resume.pdf         # Your resume
+│   └── favicon.ico
+│
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx     # Global layout
+│   │   ├── page.tsx       # Home page
+│   │   ├── about/
+│   │   │   └── page.tsx
+│   │   ├── skills/
+│   │   │   └── page.tsx
+│   │   ├── projects/
+│   │   │   └── page.tsx
+│   │   ├── experience/
+│   │   │   └── page.tsx
+│   │   ├── contact/
+│   │   │   └── page.tsx
+│   │   └── api/           # Optional backend routes
+│   │       └── contact/route.ts  # Form handling
+│   │
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── SectionTitle.tsx
+│   │   ├── ProjectCard.tsx
+│   │   ├── ThemeToggle.tsx
+│   │   └── AnimatedSection.tsx
+│   │
+│   ├── styles/
+│   │   └── globals.css
+│   │
+│   └── lib/
+│       └── utils.ts       # Helper functions
+│
+├── tailwind.config.ts
+├── package.json
+└── tsconfig.json
